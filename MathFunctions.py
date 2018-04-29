@@ -8,3 +8,8 @@ def divisorGenerator(n):
                 large_divisors.append(n / i)
     for divisor in reversed(large_divisors):
         yield divisor
+
+def calcFactorial(n):
+    if n == 1:
+        return 1
+    return n * calcFactorial(n-1)
